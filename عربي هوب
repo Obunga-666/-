@@ -1,0 +1,1088 @@
+local player = game.Players.LocalPlayer
+
+local OrionLib = loadstring(game:HttpGet(('https://pastebin.com/raw/WRUyYTdY')))()
+
+local Window = OrionLib:MakeWindow({
+    Name = "عربي هوب",
+    HidePremium = false,
+    SaveConfig = true,
+    ConfigFolder = "Name"
+})
+
+local Tab = Window:MakeTab({
+
+	Name = "📜خانة سكربتات📜",
+
+	Icon = "rbxassetid://4483345998",
+
+	PremiumOnly = false
+
+})
+
+
+local Section = Tab:AddSection({
+
+	Name = ""
+
+})
+
+
+OrionLib:MakeNotification({
+
+	Name = "مرحبا!",
+
+	Content = "⛔كل سكربتات باللغة الانجليزية⛔",
+
+	Image = "rbxassetid://4483345998",
+
+	Time = 5
+
+})
+
+
+Tab:AddButton({
+
+	Name = "شادر",
+
+	Callback = function()
+
+		local find1 = game.Lighting:FindFirstChildWhichIsA("BloomEffect")
+
+		if find1 then
+
+			find1:Destroy()
+
+		end
+
+
+		local find2 = game.Lighting:FindFirstChildWhichIsA("SunRaysEffect")
+
+		if find2 then
+
+			find2:Destroy()
+
+		end
+
+
+		local find3 = game.Lighting:FindFirstChildWhichIsA("ColorCorrectionEffect")
+
+		if find3 then
+
+			find3:Destroy()
+
+		end
+
+
+		local find4 = game.Lighting:FindFirstChildWhichIsA("BlurEffect")
+
+		if find4 then
+
+			find4:Destroy()
+
+		end
+
+
+		local find5 = game.Lighting:FindFirstChildWhichIsA("Sky")
+
+		if find5 then
+
+			find5:Destroy()
+
+		end
+
+
+		local blem = Instance.new("BloomEffect", game.Lighting)
+
+		local sanrey = Instance.new("SunRaysEffect", game.Lighting)
+
+		local color = Instance.new("ColorCorrectionEffect", game.Lighting)
+
+		local blor = Instance.new("BlurEffect", game.Lighting)
+
+		Instance.new("Sky", game.Lighting)
+
+
+		game.Lighting.ExposureCompensation = 0.34
+
+		game.Lighting.ShadowSoftness = 1
+
+		game.Lighting.EnvironmentDiffuseScale = 0.343
+
+		game.Lighting.EnvironmentSpecularScale = 1
+
+		game.Lighting.Brightness = 2
+
+		game.Lighting.ColorShift_Top = Color3.fromRGB(118, 117, 108)
+
+		game.Lighting.OutdoorAmbient = Color3.fromRGB(141, 141, 141)
+
+		game.Lighting.GeographicLatitude = 100
+
+		game.Lighting.Ambient = Color3.fromRGB(112, 112, 112)
+
+
+		blem.Intensity = 0.5
+
+		blem.Size = 22
+
+		blem.Threshold = 1.5
+
+		sanrey.Intensity = 0.117
+
+		sanrey.Spread = 1
+
+		blor.Size = 2
+
+		color.Contrast = 0.3
+
+		color.Saturation = 0.2
+
+		color.TintColor = Color3.fromRGB(255, 252, 224)
+
+	end
+
+})
+
+
+Tab:AddButton({
+
+	Name = "R6",
+
+	Callback = function()
+
+		local ScreenGui = Instance.new("ScreenGui")
+
+		local R6 = Instance.new("TextButton")
+
+		local TextButton = Instance.new("TextButton")
+
+
+		ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+		ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+
+		R6.Name = "R6"
+
+		R6.Parent = ScreenGui
+
+		R6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+		R6.Position = UDim2.new(0, 0, 0.328, 0)
+
+		R6.Size = UDim2.new(0, 29, 0, 29)
+
+		R6.Font = Enum.Font.SourceSans
+
+		R6.Text = "R6"
+
+		R6.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+		R6.TextSize = 14
+
+		R6.MouseButton1Down:connect(function()
+
+			loadstring(game:HttpGet(('https://pastebin.com/raw/jHGVauVX'),true))()
+
+		end)
+
+
+		TextButton.Parent = ScreenGui
+
+		TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+		TextButton.Position = UDim2.new(0, 0, 0.414, 0)
+
+		TextButton.Size = UDim2.new(0, 72, 0, 27)
+
+		TextButton.Font = Enum.Font.SourceSans
+
+		TextButton.Text = "Respawn"
+
+		TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+		TextButton.TextSize = 14
+
+		TextButton.MouseButton1Down:connect(function()
+
+			loadstring(game:HttpGet(('https://pastebin.com/raw/ukFZuXbb'),true))()
+
+		end)
+
+	end
+
+})
+
+Tab:AddButton({
+
+	Name = "شادر 2",
+
+	Callback = function()
+
+		
+
+		loadstring(game:HttpGet(('https://pastebin.com/raw/P1NgA165'),true))()
+
+	end
+
+})
+
+Tab:AddButton({
+
+	Name = "ادمن مزيف",
+
+	Callback = function()
+
+		
+
+		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Reviz-3841"))()
+
+	end
+
+})
+
+
+Tab:AddButton({
+
+	Name = "زيادة سرعة",
+
+	Callback = function()
+
+		
+
+		player.Character.Humanoid.WalkSpeed = 100
+
+	end
+
+})
+
+
+Tab:AddButton({
+
+	Name = "سرعة عادية",
+
+	Callback = function()
+
+		
+
+		player.Character.Humanoid.WalkSpeed = 16
+
+	end
+
+})
+
+
+Tab:AddButton({
+
+	Name = "زيادة قفزة",
+
+	Callback = function()
+
+		
+
+		player.Character.Humanoid.JumpPower = 150
+
+	end
+
+})
+
+
+Tab:AddButton({
+
+	Name = "قفزة عادية",
+
+	Callback = function()
+
+		
+
+		player.Character.Humanoid.JumpPower = 50
+
+	end
+
+})
+
+
+Tab:AddButton({
+
+	Name = "فلينق جميع",
+
+	Callback = function()
+
+		
+
+		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fe-fling-all-10553"))()
+
+	end
+
+})
+
+
+Tab:AddButton({
+
+	Name = "سكربت ماب بيوت",
+
+	Callback = function()
+
+		
+
+		loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-andx1F3E1RP-SanderX-Hub-15876"))()
+
+	end
+
+})
+
+
+Tab:AddButton({
+
+	Name = "سكربت ام ام تو",
+
+	Callback = function()
+
+		
+
+		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-YARHM-12403"))()
+
+	end
+
+})
+
+
+Tab:AddButton({
+	Name = "لا تضغط",
+	Callback = function()
+		
+		local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+
+local player = Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+local bodyVelocity = Instance.new("BodyVelocity")
+bodyVelocity.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+bodyVelocity.Parent = humanoidRootPart
+
+local speed = 30
+
+UserInputService.InputBegan:Connect(function(input)
+    if input.KeyCode == Enum.KeyCode.Space then
+        bodyVelocity.Velocity = Vector3.new(0, speed, 0)
+    end
+end)
+
+	end
+})
+
+Tab:AddButton({
+	Name = "اضغط على هذا زر واكتب بالجات console/",
+	Callback = function()
+		
+		print("زربة على شالية محمد وا رول")
+	end
+})
+
+Tab:AddButton({
+	Name = "سكربت طياران",
+	Callback = function()
+		
+		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fe-fly-Script-9712"))()
+	end
+})
+
+Tab:AddButton({
+	Name = "لكمة",
+	Callback = function()
+		
+		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fe-Punch-Tool-7383"))()
+	end
+})
+
+Tab:AddButton({
+	Name = "سكربت مقالب",
+	Callback = function()
+		
+		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fe-trolling-gui-11739"))()
+	end
+})
+
+Tab:AddButton({
+	Name = "تغير حركة انميشن",
+	Callback = function()
+		
+		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Rochips-Panel-V5-13676"))()
+	end
+})
+
+Tab:AddButton({
+	Name = "مقلب بالجات",
+	Callback = function()
+		
+		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-FE-Chat-Hax-V3.5-3512"))()
+	end
+})
+
+Tab:AddButton({
+	Name = "سكربت ماب راقدول",
+	Callback = function()
+		
+		loadstring(game:HttpGet("https://scriptblox.com/raw/Ragdoll-Engine-BEST-SCRIPT-WORKING-SystemBroken-7544"))()
+	end
+})
+
+Tab:AddButton({
+	Name = "تلمس = الى ﷲ",
+	Callback = function()
+		
+		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Touch-fling-10457"))()
+	end
+})
+
+Tab:AddButton({
+	Name = "شفت لوك 1",
+	Callback = function()
+		
+		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Shift-lock-perm-15576"))()
+	end
+})
+
+Tab:AddButton({
+	Name = "شفت لوك 2",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-shift-lock-for-mobile-17342"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "جودة سيئ",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FPS-Booster-unlocker-14381"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "رسم بالجات",
+	Callback = function()
+      		loadstring(game:HttpGet('https://pastebin.com/raw/q6WWVCKC'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "سكربت انميشنات غريبة",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://pastebin.com/raw/1p6xnBNf'),true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "كشف اماكن لاعبين",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Tha-Bronx-2-Easy-ESP-Script-12540"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "سكربت رحمة 💀",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/n0kc/AtomicHub/main/Map-Al-Biout.lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "تلمس = تنتقل",
+	Callback = function()
+      		mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "تلمس = تنتقل"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+  	end    
+})
+
+Tab:AddButton({
+	Name = "سكربت اختفاء (تحتاج كيبورد او تشغل سكربت كيبورد) [E = اختفاء اظهار]",
+	Callback = function()
+      		--[[Invisibility Toggle
+
+You can find the orginal concept here: https://v3rmillion.net/showthread.php?tid=544634
+
+This method clones the character locally, teleports the real character to a safe location, then sets the character to the clone.
+Basically, your real character is in the sky while you are on the ground.
+
+
+Because of the way this works, games with a decent anti-cheat will fck this up.
+If you turn it off, you have to go to a safe place before going invisible.
+
+Written by: BitingTheDust ; https://v3rmillion.net/member.php?action=profile&uid=1628149
+]]
+--Settings:
+local ScriptStarted = false
+local Keybind = "E" --Set to whatever you want, has to be the name of a KeyCode Enum.
+local Transparency = true --Will make you slightly transparent when you are invisible. No reason to disable.
+local NoClip = false --Will make your fake character no clip.
+
+local Player = game:GetService("Players").LocalPlayer
+local RealCharacter = Player.Character or Player.CharacterAdded:Wait()
+
+local IsInvisible = false
+
+RealCharacter.Archivable = true
+local FakeCharacter = RealCharacter:Clone()
+local Part
+Part = Instance.new("Part", workspace)
+Part.Anchored = true
+Part.Size = Vector3.new(200, 1, 200)
+Part.CFrame = CFrame.new(0, -500, 0) --Set this to whatever you want, just far away from the map.
+Part.CanCollide = true
+FakeCharacter.Parent = workspace
+FakeCharacter.HumanoidRootPart.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
+
+for i, v in pairs(RealCharacter:GetChildren()) do
+  if v:IsA("LocalScript") then
+      local clone = v:Clone()
+      clone.Disabled = true
+      clone.Parent = FakeCharacter
+  end
+end
+if Transparency then
+  for i, v in pairs(FakeCharacter:GetDescendants()) do
+      if v:IsA("BasePart") then
+          v.Transparency = 0.7
+      end
+  end
+end
+local CanInvis = true
+function RealCharacterDied()
+  CanInvis = false
+  RealCharacter:Destroy()
+  RealCharacter = Player.Character
+  CanInvis = true
+  isinvisible = false
+  FakeCharacter:Destroy()
+  workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
+
+  RealCharacter.Archivable = true
+  FakeCharacter = RealCharacter:Clone()
+  Part:Destroy()
+  Part = Instance.new("Part", workspace)
+  Part.Anchored = true
+  Part.Size = Vector3.new(200, 1, 200)
+  Part.CFrame = CFrame.new(9999, 9999, 9999) --Set this to whatever you want, just far away from the map.
+  Part.CanCollide = true
+  FakeCharacter.Parent = workspace
+  FakeCharacter.HumanoidRootPart.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
+
+  for i, v in pairs(RealCharacter:GetChildren()) do
+      if v:IsA("LocalScript") then
+          local clone = v:Clone()
+          clone.Disabled = true
+          clone.Parent = FakeCharacter
+      end
+  end
+  if Transparency then
+      for i, v in pairs(FakeCharacter:GetDescendants()) do
+          if v:IsA("BasePart") then
+              v.Transparency = 0.7
+          end
+      end
+  end
+ RealCharacter.Humanoid.Died:Connect(function()
+ RealCharacter:Destroy()
+ FakeCharacter:Destroy()
+ end)
+ Player.CharacterAppearanceLoaded:Connect(RealCharacterDied)
+end
+RealCharacter.Humanoid.Died:Connect(function()
+ RealCharacter:Destroy()
+ FakeCharacter:Destroy()
+ end)
+Player.CharacterAppearanceLoaded:Connect(RealCharacterDied)
+local PseudoAnchor
+game:GetService "RunService".RenderStepped:Connect(
+  function()
+      if PseudoAnchor ~= nil then
+          PseudoAnchor.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
+      end
+       if NoClip then
+      FakeCharacter.Humanoid:ChangeState(11)
+       end
+  end
+)
+
+PseudoAnchor = FakeCharacter.HumanoidRootPart
+local function Invisible()
+  if IsInvisible == false then
+      local StoredCF = RealCharacter.HumanoidRootPart.CFrame
+      RealCharacter.HumanoidRootPart.CFrame = FakeCharacter.HumanoidRootPart.CFrame
+      FakeCharacter.HumanoidRootPart.CFrame = StoredCF
+      RealCharacter.Humanoid:UnequipTools()
+      Player.Character = FakeCharacter
+      workspace.CurrentCamera.CameraSubject = FakeCharacter.Humanoid
+      PseudoAnchor = RealCharacter.HumanoidRootPart
+      for i, v in pairs(FakeCharacter:GetChildren()) do
+          if v:IsA("LocalScript") then
+              v.Disabled = false
+          end
+      end
+
+      IsInvisible = true
+  else
+      local StoredCF = FakeCharacter.HumanoidRootPart.CFrame
+      FakeCharacter.HumanoidRootPart.CFrame = RealCharacter.HumanoidRootPart.CFrame
+     
+      RealCharacter.HumanoidRootPart.CFrame = StoredCF
+     
+      FakeCharacter.Humanoid:UnequipTools()
+      Player.Character = RealCharacter
+      workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
+      PseudoAnchor = FakeCharacter.HumanoidRootPart
+      for i, v in pairs(FakeCharacter:GetChildren()) do
+          if v:IsA("LocalScript") then
+              v.Disabled = true
+          end
+      end
+      IsInvisible = false
+  end
+end
+
+game:GetService("UserInputService").InputBegan:Connect(
+  function(key, gamep)
+      if gamep then
+          return
+      end
+      if key.KeyCode.Name:lower() == Keybind:lower() and CanInvis and RealCharacter and FakeCharacter then
+          if RealCharacter:FindFirstChild("HumanoidRootPart") and FakeCharacter:FindFirstChild("HumanoidRootPart") then
+              Invisible()
+          end
+      end
+  end
+)
+local Sound = Instance.new("Sound",game:GetService("SoundService"))
+Sound.SoundId = "rbxassetid://232127604"
+Sound:Play()
+game:GetService("StarterGui"):SetCore("SendNotification",{["Title"] = "Invisible Toggle Loaded",["Text"] = "Press "..Keybind.." to become change visibility.",["Duration"] = 20,["Button1"] = "Okay."})
+  	end    
+})
+
+Tab:AddButton({
+	Name = "سكربت كيبورد",
+	Callback = function()
+      		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Keyboard-moblie-script-13317"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "سكربت سيارة مخفية",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://pastefy.app/0CS5vmly/raw'),true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "سكربت كرة مخفية",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fe-ball-rolL-9835"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "مشي على حائط",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Wall-Walk-9153"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "مكافحة فلينق",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-antifling-script-ig-4705"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "حصول على رانك من غير دفع اي روبوكس",
+	Callback = function()
+      		game.Players.LocalPlayer:Kick('اخوانة صدق ذلك 😭🙏')
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Arceus x مزيف",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "اختراق جدران (تحتاج كيبورد او تشغل سكربت كيبورد) [تفعيل تعطيل = N]",
+	Callback = function()
+      		local noclip = false
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Function to toggle noclip
+local function toggleNoclip()
+    noclip = not noclip
+    for _, part in pairs(character:GetDescendants()) do
+        if part:IsA("BasePart") then
+            part.CanCollide = not noclip
+        end
+    end
+end
+
+-- Bind the toggle function to a key (e.g., "N")
+game:GetService("UserInputService").InputBegan:Connect(function(input)
+    if input.KeyCode == Enum.KeyCode.N then
+        toggleNoclip()
+    end
+end)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "رسم بالجات 2",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/balditeacher/obfuscated-mobile-supportloadstring/main/obfuscated"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "اظهار رسائل الناس [فقط سكربت يشتغل على مابات عدم ظهور رسائل الناس]",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Chat-spy-3000"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "سكربت مقالب 2",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-X-Ghost-Hub-X-7595"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "لاق مزيف",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fe-Fake-Lag-13902"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "ادمن مزيف 2",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Nameless-Admin-Official-15022"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "جلوس",
+	Callback = function()
+      		local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+humanoid.Sit = true
+  	end    
+})
+
+Tab:AddButton({
+	Name = "اضافة زر Rejoin عند طرد [Rejoin معنى اعادة الانضمام]",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GGH52lan/GGH52lan/main/Rejoin_Button.txt"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "قول اشياء من غير حظر حساب [اذا واجهت شاشة سوداء = ما يدعم ماب]",
+	Callback = function()
+      		loadstring(game:HttpGet('https://pastebin.com/raw/Wqxzdi1q'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "عربي هوب 2",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/gfLcv7mP/raw"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "اختراق الجات",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Obunga-666/B/refs/heads/main/Bypass%20filter%20chat%20Arabic"))()
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+
+	Name = "📝صانع سكربت📝",
+
+	Icon = "rbxassetid://4483345998",
+
+	PremiumOnly = false
+
+})
+
+
+local Section = Tab:AddSection({
+
+	Name = ""
+
+})
+
+Tab:AddButton({
+	Name = "صانع سكربت هو Aramwowo [Aramwowo هذا حساب في روبلوكس يمكنك عثور علية]",
+	Callback = function()	
+  	end    
+})
+
+Tab:AddButton({
+	Name = "صانع سكربت من 🇮🇶العراق🇮🇶",
+	Callback = function()	
+  	end    
+})
+
+Tab:AddButton({
+	Name = "تم حل بعض مشاكل من قبل copilot او ذكاء الاصطناعي",
+	Callback = function()	
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+
+	Name = "✨تحديثات✨",
+
+	Icon = "rbxassetid://4483345998",
+
+	PremiumOnly = false
+
+})
+
+
+local Section = Tab:AddSection({
+
+	Name = "🙏 رجاء لا تعدل في سكربت"
+
+})
+
+Tab:AddButton({
+	Name = "تم اضافة ميزتين (الاخبار🔈) وا (✨تحديثات✨)",
+	Callback = function()	
+  	end    
+})
+
+Tab:AddButton({
+	Name = "تم اضافة ٥ سكربتات في (📜خانة سكربتات📜)",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "تم اضافة ميزة (الاعدادات⚙️)",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "تم اضافة ١ سكربت باللغة عربية في (📜خانة سكربتات📜)",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "تم مسح سكربت (جي هوب 14) بسبب سكربت لا يعمل",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "تم تغير سكربت (تغير حركة انميشن) بسبب سكربت قديم لا يعمل",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "تم اضافة ٥ سكربتات في (📜خانة سكربتات📜)",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "تحديثات مستمرة",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "تم اضافة سيرفرات في (الاعدادات⚙️) وا يمكنك تحديد سيرفر الذي تريدة",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "تم اضافة نسختين من شفت لوك في (📜خانة سكربتات📜)",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "تم اضافة ميزة [سوشل ميديا📷]",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "تم اضافة ٣ سكربتات في (📜خانة سكربتات📜)",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "تم تغير اسم ميزة جديدة",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "تم مسح سكربت (💀رحمة) بسبب حظر حسابك",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "تم مسح ميزة [كيف تصير هكر حقيقي؟] بسبب ليس لى فائد",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "تم اضافة ٧ سكربتات في (📜خانة سكربتات📜)",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "تم اضافة ٣ سكربتات في (📜خانة سكربتات📜)",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "يوجد نسخة جديدة من [عربي هوب] في (📜خانة سكربتات📜)",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "تم تعديل وا اصلاح بعض اخطاء",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "تم ازالة 'مفتاح' بسبب يوجد اخطاء",
+	Callback = function()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+
+	Name = "الاعدادات⚙️",
+
+	Icon = "rbxassetid://4483345998",
+
+	PremiumOnly = false
+
+})
+
+
+local Section = Tab:AddSection({
+
+	Name = ""
+
+})
+
+Tab:AddButton({
+	Name = "الاعادة تشغيل سكربت",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Arabic-hub-17625"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "قتل شخصية",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+  	end    
+})
+
+Tab:AddButton({
+	Name = "اغلاق سكربت",
+	Callback = function()
+      		OrionLib:Destroy()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Rejoin [اعادة الانضمام]",
+	Callback = function()
+      		local TeleportService = game:GetService("TeleportService")
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+local function rejoin()
+    local success, errorMessage = pcall(function()
+        TeleportService:TeleportToPlaceInstance(game.PlaceId, game.JobId, LocalPlayer)
+    end)
+    if not success then
+        warn("Failed to rejoin: " .. errorMessage)
+    end
+end
+
+-- Call the rejoin function when needed
+rejoin()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "سيرفرات",
+	Callback = function()
+      		loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80",true))();
+  	end    
+})
+
+Tab:AddButton({
+	Name = "خروج من لعبة",
+	Callback = function()
+      		game:Shutdown()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+
+	Name = "❗تحذير❗",
+
+	Icon = "rbxassetid://4483345998",
+
+	PremiumOnly = false
+
+})
+
+
+local Section = Tab:AddSection({
+
+	Name = "❗تحذير هام❗"
+
+})
+
+Tab:AddButton({
+	Name = "❗هذا سكربت مجاني غير مدفوع❗",
+	Callback = function()
+  	end    
+})
